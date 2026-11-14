@@ -1,5 +1,6 @@
 # Guess The Number - Rust
-![Rust learn](https://skillicons.dev/icons?i=rust)
+![Rust learn](https://skillicons.dev/icons?i=rust) **Rust Learn**
+---
 本仓库使用 **GPLv3** 许可证开源。
 ---
 如你所见，这是一个练习仓库。
