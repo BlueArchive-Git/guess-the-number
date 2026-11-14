@@ -2,7 +2,7 @@ use std::io::{self, Write};
 use rand::Rng;
 fn main() {
 	let secret = rand::thread_rng().gen_range(1..=100);
-	println!("我在心中默念了一个 1~100 之间的数字，你来猜猜是什么？");
+	println!("I silently picked a number between 1 and 100 in my head. Guess what it is?");
 	loop {
 		print!("> ");
 		io::stdout().flush().unwrap();
@@ -10,11 +10,11 @@ fn main() {
 		io::stdin().read_line(&mut number).expect("读取失败！");
 		let number: i32 = number.trim().parse().expect("请输入数字！");
 		if number > secret {
-			println!("猜大了");
+			println!("Too big");
 		} else if number < secret {
-			println!("猜小了");
+			println!("Too small");
 		} else if number == secret {
-			println!("猜对了！这个数是 {}", secret);
+			println!("You guessed right! The number is {}", secret);
 			break;
 		}
 	}
